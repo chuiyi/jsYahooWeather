@@ -34,7 +34,7 @@ function getYahooWeatherForecast(data){
             var strHtml = "";
             strHtml += "<div style='float:left;'><img src='http://l.yimg.com/a/i/us/we/52/" + data.query.results.channel.item.condition.code + ".gif' /></div>";
             strHtml += "<div style='margin-left:60px;'><label>" + data.query.results.channel.location.city + "</label><br/>";
-            strHtml += " " + data.query.results.channel.item.condition.temp.toFixed(1) + "℃ " + data.query.results.channel.item.condition.text + "</div>";
+            strHtml += " " + data.query.results.channel.item.condition.temp + "℃ " + data.query.results.channel.item.condition.text + "</div>";
             
             // data.query.results.channel.location.city
             // data.query.results.channel.item.condition.code
