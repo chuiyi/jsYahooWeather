@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+</head>
+<body>
+	<div id="myDiv" align="center">
+		<img src="loading.gif" />
+	</div>
+	<script type="text/javascript" src="Locator.js"></script>
+	<script type="text/javascript" src="YahooWeatherGetter.js"></script>
+	<script type="text/javascript">
+	var myDiv = document.getElementById("myDiv")
+	Locator.getLocationCallback = function(coords){
+		YahooWeatherGetter.showYahooWeather(coords.longitude, coords.latitude, myDiv);
+	}
+	Locator.getLocation(myDiv);
+	</script>
+</body>
+</html>
