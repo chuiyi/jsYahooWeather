@@ -55,8 +55,6 @@ YahooWeatherGetter.getUrlYahooWeatherForecast = function(woeid, callback){
     var url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%3D"
     + woeid + "%20and%20u%3D%22c%22&format=json&diagnostics=true&callback=" + callback.name;
     return url;
-
-    http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%3D28752317%20and%20u%3D%22c%22&format=json&diagnostics=true&callback=
 }
 
 YahooWeatherGetter.getCfromF = function(f){
